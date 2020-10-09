@@ -1,0 +1,4 @@
+import random
+random.seed(1)
+mass = [int(random.random()*1000) for i in range(1000)]
+print(max(mass))
