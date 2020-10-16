@@ -1,0 +1,12 @@
+import random
+number = i%2=0
+number2 = i%2=1
+mass = [int(random.random()*100) for i in range(100)]
+mass2 = []
+mass3=[]
+print(mass2.append(mass3))
+for each number in mass:
+    mass2.append(number)
+for  each number2 in mass:
+    mass3.append(number2)
+    
