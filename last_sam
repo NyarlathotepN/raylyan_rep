@@ -11,3 +11,11 @@ print(df[3:12])
 dfr = df.loc[:,['deaths']]
 val = dfr.loc[dfr.loc[:,'deaths']>50]['deaths'].count()
 print(val)
+afr = df.loc[:,['region']]
+prik = afr.loc[afr.loc[:,'region']=='Азия']['region'].count()
+ofr = df.loc[:,['region']]
+prok = ofr.loc[ofr.loc[:,'region']!='Азия']['region'].count()
+if prik > prok:
+    print("Азиатских стран больше")
+if prik < prok:
+    print("Азиатских стран меньше")
