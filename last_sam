@@ -7,7 +7,7 @@ df.columns
 som = df.loc[:,['region', 'country', 'total_cases']]
 print(som)
 print(df.tail(10))
-print(df.tail(5))
+print(df.head(5))
 print(df[3:12])
 dfr = df.loc[:,['deaths']]
 val = dfr.loc[dfr.loc[:,'deaths']>50]['deaths'].count()
