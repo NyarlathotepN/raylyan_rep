@@ -1,7 +1,7 @@
 import pandas as pd
 df = pd.read_csv('cholera.csv')
-table_size=df.shape
-print(table_size)
+size=df.shape
+print(size)
 df.columns
 som = df.loc[:,['region', 'country', 'total_cases']]
 print(som)
@@ -10,3 +10,4 @@ print(df.head(5))
 print(df[3:12])
 dfr = df.loc[:,['deaths']]
 val = dfr.loc[dfr.loc[:,'deaths']>50]['deaths'].count()
+print(val)
