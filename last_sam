@@ -17,5 +17,5 @@ ofr = df.loc[:,['region']]
 prok = ofr.loc[ofr.loc[:,'region']!='Азия']['region'].count()
 if prik > prok:
     print("Азиатских стран больше")
-if prik < prok:
+else:
     print("Азиатских стран меньше")
