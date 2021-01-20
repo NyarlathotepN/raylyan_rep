@@ -1,0 +1,23 @@
+
+class Alphabet:
+    def __init__(self, language, letters):
+        self.language = language
+        self.letters = letters
+    def letters_num(self):
+        return len(self.letters)
+    def print(self):
+        print(self.letters)
+        
+import string
+lete = string.ascii_letters  
+let =[i for i in lete] 
+print(let) 
+lan ="En"
+alpha =Alphabet(lan, let)  
+print(str(alpha.letters_num())) 
+alpha.print()      
+        
+class EngAlphabet(Alphabet(language, letters)):
+    def __init__(self):
+      
+Пока смог только так, не вспомнил как вызывать правильно метод внутри метода
